@@ -1,27 +1,35 @@
 {
-  "$schema": "./node_modules/wrangler/config-schema.json",
-  "name": "web-app",
-  "main": "worker.js",
-  "compatibility_date": "2026-07-30",
-  "compatibility_flags": ["nodejs_compat"],
-  "d1_databases": [
-    { "binding": "DB" }
-  ],
-  "kv_namespaces": [
-    { "binding": "KV" }
-  ],
-  "workers_dev": true,
-  "preview_urls": true,
-  "observability": {
-    "enabled": true,
-    "logs": {
-      "enabled": true,
-      "head_sampling_rate": 1,
-      "invocation_logs": true
-    },
-    "traces": {
-      "enabled": true,
-      "head_sampling_rate": 0.01
-    }
-  }
+	"$schema": "./node_modules/wrangler/config-schema.json",
+	"name": "web-app",
+	"main": "worker.js",
+	"compatibility_date": "2026-07-30",
+	"compatibility_flags": [
+		"nodejs_compat"
+	],
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_id": "295c591f-5a33-40d9-9bd9-c86f87b1f0f7"
+		}
+	],
+	"kv_namespaces": [
+		{
+			"binding": "KV",
+			"id": "694eeb30e6c546a69506b137b0b95364"
+		}
+	],
+	"workers_dev": true,
+	"preview_urls": true,
+	"observability": {
+		"enabled": true,
+		"logs": {
+			"enabled": true,
+			"head_sampling_rate": 1,
+			"invocation_logs": true
+		},
+		"traces": {
+			"enabled": true,
+			"head_sampling_rate": 0.01
+		}
+	}
 }
